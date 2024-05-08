@@ -6,7 +6,7 @@ import { AccessControlService } from "./services/access-control.services";
   imports: [],
   controllers: [AccessControlControllers],
   providers: [AccessControlService],
-  exports: [AccessControlService],
+  exports: [],
 })
 
 

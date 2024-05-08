@@ -1,10 +1,12 @@
 import { Module } from "@nestjs/common";
+import { MiscellaneousController } from "./controllers";
+import { MiscellaneousService } from "./services";
 
 @Module({
   imports: [],
-  controllers: [],
-  exports: [],
-  providers: []
+  controllers: [MiscellaneousController],
+  providers: [MiscellaneousService],
+  exports: []
 })
 
 

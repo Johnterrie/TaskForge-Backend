@@ -1,10 +1,12 @@
 import { Module } from "@nestjs/common";
+import { KanbanController } from "./controllers";
+import { KanbanServices } from "./services";
 
 @Module({
   imports: [],
-  controllers: [],
-  exports: [],
-  providers: []
+  controllers: [KanbanController],
+  providers: [KanbanServices],
+  exports: []
 })
 
 

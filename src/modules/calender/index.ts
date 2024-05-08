@@ -1,10 +1,12 @@
 import { Module } from "@nestjs/common";
+import { CalenderController } from "./controllers";
+import { CalenderService } from "./services";
 
 @Module({
   imports: [],
-  controllers: [],
-  exports: [],
-  providers: []
+  controllers: [CalenderController],
+  providers: [CalenderService],
+  exports: []
 })
 
 
