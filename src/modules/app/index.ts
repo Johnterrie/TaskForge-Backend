@@ -5,6 +5,17 @@ import { ProjectModule } from "../project";
 import { APP_PIPE } from "@nestjs/core";
 // import { ScheduleModule } from "@nestjs/schedule"
 import { AppController } from "./services/app.controller";
+import { AccessControlModule } from "../access-control-permissions";
+import { AuditLogsModule } from "../audit-logs";
+import { AuthModule } from "../auth";
+import { CalenderModule } from "../calender";
+import { IntegrationModule } from "../integrations";
+import { KanbanModule } from "../kanban-board";
+import { MiscellaneousModule } from "../miscellaneous";
+import { NotificationModule } from "../notification-reminder";
+import { ReportAnalysisModule } from "../report-analytics";
+import { TaskModule } from "../task";
+import { TimeTrackingModule } from "../time-tracking";
 
 @Module({
   imports: [
@@ -14,7 +25,18 @@ import { AppController } from "./services/app.controller";
       // validationSchema: ConfigValidationSchema,
     }),
     ProjectModule,
-    // ScheduleModule.forRoot()
+    AccessControlModule,
+    AuditLogsModule,
+    AuthModule,
+    CalenderModule,
+    IntegrationModule,
+    KanbanModule,
+    MiscellaneousModule,
+    NotificationModule,
+    ReportAnalysisModule,
+    TaskModule,
+    TimeTrackingModule
+        // ScheduleModule.forRoot()
   ],
   controllers: [AppController],
   providers: [AppService],
