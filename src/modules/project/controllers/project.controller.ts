@@ -20,8 +20,30 @@ export class ProjectController{
 
   @Put("/:id")
   updateSingleProject(){
-      return "sign up"
+      return "update single Project"
   }
+
+  @Delete("/:id")
+  deleteProject(){
+      return "delete project"
+  }
+
+  @Get("/:id/members")
+  getSingleProjectMembers(){
+      return "get members of the project"
+  }
+
+  @Post("/:id/members")
+  addMembersToProject(){
+      return "add members to a project"
+  }
+
+  @Delete("/:id/members/:userId")
+  deleteMembersFromProject(){
+      return "delete members from project"
+  }
+
+
 
 
 

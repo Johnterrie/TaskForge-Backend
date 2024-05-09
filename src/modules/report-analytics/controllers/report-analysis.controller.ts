@@ -1,4 +1,14 @@
-import { Controller } from "@nestjs/common";
+import { Controller, Get } from '@nestjs/common';
 
-@Controller()
-export class ReportAnalysisController{}
+@Controller('/projects/:projectId')
+export class ReportAnalysisController {
+  @Get('/reports')
+  getReport() {
+    return 'working';
+  }
+
+  @Get('/analytics')
+  getAnalytics() {
+    return 'working';
+  }
+}
