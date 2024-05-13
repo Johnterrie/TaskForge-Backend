@@ -1,5 +1,5 @@
 import { Repository, EntityRepository } from 'typeorm';
-import { ProjectEntity } from '../entitites';
+import { Project } from '../entitites';
 
-@EntityRepository(ProjectEntity)
-export class ProjectRepository extends Repository<ProjectEntity> {}
+@EntityRepository(Project)
+export class ProjectRepository extends Repository<Project> {}

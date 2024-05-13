@@ -1,5 +1,14 @@
-import { Controller } from "@nestjs/common";
+import { Controller, Get } from '@nestjs/common';
 
+@Controller('/audit-logs')
+export class AuditLogsControllers {
+  @Get()
+  getAuditLogs() {
+    return 'working';
+  }
 
-@Controller()
-export class AuditLogsControllers {}
+  @Get('/:logId')
+  getSingleAuditLogs() {
+    return 'working';
+  }
+}
