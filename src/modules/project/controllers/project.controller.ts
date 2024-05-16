@@ -1,53 +1,44 @@
-import { Get, Post, Put, Delete, Controller } from "@nestjs/common";
+import { Get, Post, Put, Delete, Controller } from '@nestjs/common';
 
-
-@Controller("/projects")
-export class ProjectController{
+@Controller('/projects')
+export class ProjectController {
   @Get()
-  getAllProject(){
-      return "get all project"
+  getAllProject() {
+    return 'get all project';
   }
 
   @Post()
-  addProject(){
-      return "add project"
+  addProject() {
+    return 'add project';
   }
 
-  @Get("/:id")
-  getSingleProject(){
-      return "get single Project"
+  @Get('/:id')
+  getSingleProject() {
+    return 'get single Project';
   }
 
-  @Put("/:id")
-  updateSingleProject(){
-      return "update single Project"
+  @Put('/:id')
+  updateSingleProject() {
+    return 'update single Project';
   }
 
-  @Delete("/:id")
-  deleteProject(){
-      return "delete project"
+  @Delete('/:id')
+  deleteProject() {
+    return 'delete project';
   }
 
-  @Get("/:id/members")
-  getSingleProjectMembers(){
-      return "get members of the project"
+  @Get('/:id/members')
+  getSingleProjectMembers() {
+    return 'get members of the project';
   }
 
-  @Post("/:id/members")
-  addMembersToProject(){
-      return "add members to a project"
+  @Post('/:id/members')
+  addMembersToProject() {
+    return 'add members to a project';
   }
 
-  @Delete("/:id/members/:userId")
-  deleteMembersFromProject(){
-      return "delete members from project"
+  @Delete('/:id/members/:userId')
+  deleteMembersFromProject() {
+    return 'delete members from project';
   }
-
-
-
-
-
-
-
-
 }
