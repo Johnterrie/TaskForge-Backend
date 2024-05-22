@@ -3,7 +3,7 @@ import { User } from 'src/modules/auth/entitites';
 @Entity()
 export class Project {
   @PrimaryGeneratedColumn()
-  id: number;
+  id: number
 
   @Column()
   project: string;

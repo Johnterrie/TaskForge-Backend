@@ -16,6 +16,14 @@ export class AuthServices {
     if (!id) {
       return null;
     }
-    return this.user.findOne(id);
+    return this.user.findOneBy({ id: id });
+  }
+
+  find(email: string) {
+    return this.user.find({
+      select: {
+        email: true,
+      },
+    });
   }
 }
