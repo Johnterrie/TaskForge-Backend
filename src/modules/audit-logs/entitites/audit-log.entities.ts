@@ -6,5 +6,5 @@ export class Audit {
   id: number;
 
   @Column()
-  email: string;
+  logs: string;
 }
